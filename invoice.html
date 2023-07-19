@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>invoice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300&family=Forum&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <style>
+        :root {
+            --Forum: 'Forum', cursive;;
+            --Biryani: 'Biryani', sans-serif;
+        }
+        body{
+            background-image: url('Namnlos_footer.png');
+            background-position: 130% 170%;
+            background-size: 60%;
+            background-attachment: inherit;
+            background-repeat: no-repeat;
+            color: #3d3d3d !important;
+
+            font-family: var(--Forum) !important;
+        }
+        .Header{
+            font-family: var(--Biryani) !important;
+        }
+
+        .all{
+            background-image: url('Namnlos.png');
+            background-position: -100% -170%;
+            background-size: 90%;
+            background-attachment: inherit;
+            background-repeat: no-repeat;
+        }
+
+        .page_no{
+            text-align: end;
+            color: #86889d;
+            padding-top: 5%;
+            padding-right: 5%;
+            font-size: 80%;
+        }
+
+        
+        header {
+            margin-left: 10%;
+            margin-bottom: 3%;
+            color: #3d3d3d;
+        }
+        header .title{
+            font-size: 400%;
+        }
+        header .logo{
+            padding-right: 10% !important;
+            padding-top: 5%;
+            font-size: 200%;
+        }
+
+        .company_info{
+            margin-right: 5% !important;
+            margin-bottom: 0.5% !important;
+            font-size: 80%;
+            width: fit-content;
+            position: absolute;
+            right: 0;
+        }
+
+        section{
+            margin-bottom: 0.5% !important;
+            font-size: 80%;
+            margin-left: 10%;
+            margin-top: 7%;
+        }
+
+        section .OCR{
+            display: flex;
+            align-items: end;
+        }
+
+        .table_title{
+            background-color: #ede0b9;
+            padding-left: 10%;
+            padding-right:10%;
+        }
+        .table_title p{
+            display: flex;
+            align-items: center;
+        }
+
+        .table_rows{
+            margin-left: 10% !important;
+            margin-right: 10% !important;
+            border-bottom: 2px solid #3d3d3d;
+        }
+
+        .net{
+            width: 25%;
+            position: absolute;
+            right: 10%;
+        }
+
+
+        .hr {
+            border: none;
+            border-top: 2px solid #3d3d3d;
+            height: 1px;
+            margin: 0px 0;
+            width: 130% !important;
+            opacity: unset;
+        }
+
+
+        .footer_img{
+            background-image: url('Namnlos_footer.png');
+            background-position: 130% 0%;
+            background-size: 60%;
+            background-attachment: inherit;
+            background-repeat: no-repeat;
+        }
+
+
+        .payment_info_bank{
+            margin-top: 3% !important;
+        }
+
+
+        .thanks{
+            width: 20%;
+            position: absolute;
+            right: 10%;
+            background-color: #ede0b9;
+            padding: 1%;
+            border-radius: 999em 999em 999em 999em;
+            font-size: 90%;
+        }
+
+
+        footer{
+            margin-left: 20%;
+            margin-top: 7%;
+            font-size: 80%;
+            position: absolute;
+            width: 50%;
+        }
+
+        .footer p{
+            font-size: 60% !important;
+        }
+
+    </style>
+    
+
+   
+</head>
+<body>
+    <div class="all">
+        <header>
+            <div class="row page_no Header">
+                <p>PAGE 1/1</p>
+            </div>
+            <div class="row header">
+                <div class="col title Header">
+                    <p>INVOICE</p>
+                </div>
+                <div class="col text-end logo Header">
+                    <p>LOGO</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="row text-end company_info">
+            <div class="row">
+                <p>&#60;company_name></p>
+            </div>
+            <div class="row">
+                <p>&#60;organisation_number></p>
+            </div>
+            <div class="row">
+                <p>&#60;vat_number></p>
+            </div>
+            <div class="row">
+                <p>Godkänd för F-skatt</p>
+            </div>
+        </div>
+
+        <section class="invoice_to mb-5">
+            <div class="row mb-5">
+                <div class="row">
+                    <p>Invoice to:</p>
+                </div>
+                <div class="row Header">
+                    <h2>MUHAMMAD PATEL</h2>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-4">
+                    <div class="row">
+                        <p>Address: 123 Anywhere St., Any City, ST 12345</p>
+                    </div>
+                    <div class="row">
+                        <p>Date : 21/05/2022</p>
+                    </div>
+                    <div class="row">
+                        <p>Number: +123-456-7890</p>
+                    </div>
+                    <div class="row">
+                        <p>&#60;receiver_extra_field1>: &#60;value1></p>
+                    </div>
+                    <div class="row">
+                        <p>&#60;receiver_extra_field2>: &#60;value2></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <p>Our reference: QIXRXA 20LRJ9 BLG6IZ 1FBUCU OAQR4R HUEP1S 1AIQFZ 7FO5M3 AQZC6D QV1QSC</p>
+                    </div>
+                    <div class="row">
+                        <p>Your reference: IBT0YV V07UD5 4WHHIT LR9NCC B1Q1XR 9HWEUR EXW28E W37S24 YT648F FGOXFM</p>
+                    </div>
+                    <div class="row">
+                        <p>Order number: 213456789</p>
+                    </div>
+                    <div class="row">
+                        <p>Reference 1: 123456789</p>
+                    </div>
+                    <div class="row">
+                        <p>Reference 2: 1234567890+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row OCR">
+                <div class="col-4">
+                    <div class="row">
+                        <p>OCR No: 12345</p>
+                    </div>
+                    <div class="row">
+                        <p>Invoice number: 2857193521</p>
+                    </div>
+                    <div class="row">
+                        <p>Invoice date: 23/06/2023</p>
+                    </div>
+                    <div class="row">
+                        <p>Due date: 30/06/2023</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <p>&#60;extra_field_key1>: &#60;extra_field_value1></p>
+                    </div>
+                    <div class="row">
+                        <p>&#60;extra_field_key2>: &#60;extra_field_value2></p>
+                    </div>
+                    <div class="row">
+                        <p>&#60;extra_field_key3>: &#60;extra_field_value3></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="table">
+        <div class="row table_title ">
+            <div class="col">
+                <p>NO</p>
+            </div>
+            <div class="col">
+                <p>ITEM DESCRIPTION</p>
+            </div>
+            <div class="col">
+                <p>QTY</p>
+            </div>
+            <div class="col">
+                <p>PRICE</p>
+            </div>
+            <div class="col">
+                <p>DISCOUNT</p>
+            </div>
+            <div class="col">
+                <p>VAT-RATE</p>
+            </div>
+            <div class="col">
+                <P>TOTAL</P>
+            </div>
+        </div>
+
+        <div class="row table_rows">
+            <div class="col">
+                <p>01254</p>
+            </div>
+            <div class="col">
+                <p>Logo design</p>
+            </div>
+            <div class="col">
+                <p>4</p>
+            </div>
+            <div class="col">
+                <p>$100.00</p>
+            </div>
+            <div class="col">
+                <p>$12</p>
+            </div>
+            <div class="col">
+                <p>10%</p>
+            </div>
+            <div class="col">
+                <P>$400</P>
+            </div>
+        </div>
+        <div class="row table_rows">
+            <div class="col">
+                <p>01254</p>
+            </div>
+            <div class="col">
+                <p>Social media feed</p>
+            </div>
+            <div class="col">
+                <p>12</p>
+            </div>
+            <div class="col">
+                <p>$20.00</p>
+            </div>
+            <div class="col">
+                <p>$12</p>
+            </div>
+            <div class="col">
+                <p>10%</p>
+            </div>
+            <div class="col">
+                <P>$240</P>
+            </div>
+        </div>
+        <div class="row table_rows">
+            <div class="col">
+                <p>01254</p>
+            </div>
+            <div class="col">
+                <p>Copy writing</p>
+            </div>
+            <div class="col">
+                <p>4</p>
+            </div>
+            <div class="col">
+                <p>$100.00</p>
+            </div>
+            <div class="col">
+                <p>$12</p>
+            </div>
+            <div class="col">
+                <p>10%</p>
+            </div>
+            <div class="col">
+                <P>$400</P>
+            </div>
+        </div>
+        <div class="row table_rows">
+            <div class="col">
+                <p>01254</p>
+            </div>
+            <div class="col">
+                <p>Website design</p>
+            </div>
+            <div class="col">
+                <p>4</p>
+            </div>
+            <div class="col">
+                <p>$100.00</p>
+            </div>
+            <div class="col">
+                <p>$12</p>
+            </div>
+            <div class="col">
+                <p>10%</p>
+            </div>
+            <div class="col">
+                <P>$400</P>
+            </div>
+        </div>
+        <div class="row net">
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">Total excl. VAT</div>
+                    <div class="col">$1,440.00</div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">Invoice discount</div>
+                    <div class="col">$144.00</div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">Total VAT</div>
+                    <div class="col">$144.00</div>
+                </div>
+                <div class="row">
+                    <hr class="hr">
+                </div>
+                <div class="row text-end">
+                    <h4>TOTAL : $1,584.00</h4>
+                </div>
+                <div class="row">
+                    <hr class="hr">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="payment_info">
+        <div class="row mb-3 Header">
+            <h2>PAYMENT INFO</h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <p>Bankgiro-number: 1234-5678 </p>
+                </div>
+                <div class="row">
+                    <p>Plusgiro-number: 1234567-345</p>
+                </div>
+                <div class="row">
+                    <p>Swish-number: 12345678</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <p>Terms of payment: 6 </p>
+                </div>
+                <div class="row">
+                    <p>Late interest rate: 10.50% per annum</p>
+                </div>
+                <div class="row">
+                    <p>Invoice period: &#60;invoice_period></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="payment_info_bank">
+        <div class="row">
+            <div class="col-4 Header">
+                <h4>IBAN</h4>
+            </div>
+            <div class="col-4 Header">
+                <h4>BANK TRANSFER</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <p>IBAN-number: JO71CB JO0000 000000 001234 567890</p>
+                </div>
+                <div class="row">
+                    <p>Swift-number: BNOR PH MMXXX</p>
+                </div>
+                <div class="row">
+                    <p>Bank:: SEB</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <p>Account number: DE89370400440532013000</p>
+                </div>
+                <div class="row">
+                    <p>Clearing number: DEBLZ12345678</p>
+                </div>
+                <div class="row">
+                    <p>Bank: SEB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="row thanks text-center mb-3">
+        <div class="row Header">
+            <h2 style="font-size: 220%;">THANK YOU</h2>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="row text-center">
+            <div class="col">
+                <p>E : hello@reallygreatsite.com</p>
+            </div>
+            <div class="col-3">
+                <p>P : +123-456-7890</p>
+            </div>
+            <div class="col">
+                <p>A : 123 Anywhere St., Any City, ST 12345</p>
+            </div>
+        </div>
+        <div class="row footer text-center">
+            <div class="col">
+                <p>&#60;footer_key_1> </p>
+            </div>
+            <div class="col">
+                <p>&#60;footer_key_2> </p>
+            </div>
+            <div class="col">
+                <p>&#60;footer_key_3> </p>
+            </div>
+            <div class="col">
+                <p>&#60;footer_key_4> </p>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

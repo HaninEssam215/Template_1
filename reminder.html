@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>reminder</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300&family=Forum&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <style>
+        :root {
+            --Forum: 'Forum', cursive;;
+            --Biryani: 'Biryani', sans-serif;
+        }
+        body{
+            color: #3d3d3d !important;
+            font-family: var(--Forum) !important;
+        }
+        .Header{
+            font-family: var(--Biryani) !important;
+        }
+
+        .all {
+            background-image: url('Namnlos.png');
+            background-position: -110% -190%;
+            background-size: 90%;
+            background-attachment: inherit;
+            background-repeat: no-repeat;
+        }
+        .page_no{
+            text-align: end;
+            color: #86889d;
+            padding-top: 5%;
+            padding-right: 5%;
+        }
+
+        
+        header {
+            margin-left: 10%;
+            margin-bottom: 10%;
+            color: #3d3d3d;
+        }
+        header .title{
+            font-size: 400%;
+        }
+        header .logo{
+            padding-right: 10% !important;
+            padding-top: 5%;
+            font-size: 200%;
+        }
+
+        section{
+            margin-left: 10%;
+            color: #3d3d3d;
+        }
+
+        section .billed_by_info p,
+        section .invoice_to_info p,
+        section .last_col_info p
+        {
+            margin: 0.7% !important;
+            font-size: 80%;
+        }
+
+
+        section .last_col_info{
+            padding-top: 100px;
+        }
+
+
+        div.row.unpaid_invoice{
+            margin-top: 5%;
+        }
+
+        section .reminder_info{
+            margin-left: 2%;
+            margin-top: 90px;
+        }
+
+        section .reminder_info_title h5{
+            height: 10%;
+            padding-left: 12.5%;
+            position: absolute;
+            left: 0; 
+            width: 100%;
+            display: flex;
+            align-items: center;
+        background-color: #ede0b9;
+        margin-top: 1%;
+        }
+
+
+        .first_hr{
+            height: 2px !important;
+            color:#7a7a7a;
+            margin-left: 10%;
+            margin-right: 0.7% !important;
+            opacity: unset;
+        }
+
+        .total{
+            margin: 0.7% !important;
+            font-size: 170%;
+            height: 30px;
+        }
+
+        .total p{
+            width: 20%;
+            position:absolute;
+            right: 0;
+            padding-bottom:1%;
+            border-bottom: 2px solid #7a7a7a;
+        }
+
+        .payment_info p,
+        .payment_info_bank p{
+            margin: 0.7% !important;
+            font-size: 80%;
+        }
+
+        .payment_info_bank{
+            margin-top: 4%;
+        }
+
+
+
+        footer{
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 3%;
+            font-size: 80%;
+        }
+
+        .footer_img{
+            background-image: url('Namnlos_footer.png');
+            background-position: 130% 0%;
+            background-size: 60%;
+            background-attachment: inherit;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+   
+</head>
+<body>
+
+    <div class="all">
+          
+    <header>
+        <div class="row page_no Header">
+            <p>PAGE 1/1</p>
+        </div>
+        <div class="row header">
+            <div class="col title Header">
+                <p>REMINDER</p>
+            </div>
+            <div class="col text-end logo Header">
+                <p>LOGO</p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="row">
+            <div class="col invoice_to">
+                <div class="row">
+                    <p>Invoice to :</p>
+                </div>
+                <div class="row pb-3 Header">
+                    <h2>MUHAMMAD PATEL</h2>
+                </div>
+                <div class="invoice_to_info">
+                    <div class="row">
+                        <p>Address: 123 Anywhere St., Any City, ST 12345</p>
+                    </div>
+                    <div class="row">
+                        <p>Date : 21/05/2022</p>
+                    </div>
+                    <div class="row">
+                        <p>Number: +123-456-7890</p>
+                    </div>
+                    <div class="row">
+                        <p>&#60;receiver_extra_field1>: &#60;value1></p>
+                    </div>
+                    <div class="row">
+                        <p>&#60;receiver_extra_field2>: &#60;value2></p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col billed_by">
+                <div class="row">
+                    <p>Billed by:</p>
+                </div>
+                <div class="row pb-3 Header">
+                    <h2>COMPANY NAME</h2>
+                </div>
+                <div class="billed_by_info">
+                    <div class="row">
+                        <p>&#60;company_name></p>
+                    </div>
+                    <div class="row">
+                        <p>&#60;organisation_number></p>
+                    </div>
+                    <div class="row">
+                        <p>&#60;vat_number></p>
+                    </div>
+                    <div class="row">
+                        <p>Godkänd för F-skat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col last_col">
+                <div class="last_col_info">
+                    <div class="row">
+                        <p>OCR No: 12345</p>
+                    </div>
+                    <div class="row">
+                        <p>Reminder number: 2857193521</p>
+                    </div>
+                    <div class="row">
+                        <p>Date: 23/06/2023</p>
+                    </div>
+                    <div class="row">
+                        <p>Due date: 30/06/2023</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row unpaid_invoice">
+            <h1 class="Header">Påminnelse obetald faktura nr 5682 från Comp. Inc.</h1>
+            <p>
+                Vi kan inte se att det inkommit någon betalning för rubricerad faktura. Därför ska istället denna
+                påminnelsefaktura betalas. Betalningen ska vara oss tillhanda senast 2021-10-04. Därefter kan fakturan komma att
+                överlämnas till inkasso vilket medför ytterligare kostnader.</br></br>
+
+                Ār fakturan redan betald?</br>
+                Om du har betalat rekommenderar vi dig att kontrollera att du har betalat till rätt bankgiro och med rätt referens.
+            </p>
+        </div>
+        <div class="row reminder_info_title">
+            <h5 class="Header">REMINDER REFERS TO:</h5>
+        </div>
+
+        <div class="row reminder_info">
+            <div class="row">
+                <div class="row">
+                    <div class="col">
+                        <p>Invoice:</p>
+                    </div>
+                    <div class="col text-end">
+                        <p>&#60;invoice_number></p>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Invoice amount:</p>
+                    </div>
+                    <div class="col text-end">
+                        <p>&#60;invoice_amount></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Due date:</p>
+                    </div>
+                    <div class="col text-end">
+                        <p>&#60;due_date></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Reminder fee:</p>
+                    </div>
+                    <div class="col text-end">
+                        <p>&#60;reminder_fee></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Interest fee:</p>
+                    </div>
+                    <div class="col text-end">
+                        <p>&#60;interest_fee></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="first_hr">
+
+    <div class="row total mb-5 mr-5">
+        <div class="col text-end Header">
+            <P>TOTAL: $1,584.00</P>
+        </div>
+    </div>
+
+    <div class="footer_img">
+        <section class="payment_info">
+            <div class="row mb-3 Header">
+                <h2>PAYMENT INFO</h2>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="row">
+                        <p>Bankgiro-number: 1234-5678 </p>
+                    </div>
+                    <div class="row">
+                        <p>Plusgiro-number: 1234567-345</p>
+                    </div>
+                    <div class="row">
+                        <p>Swish-number: 12345678</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <p>Terms of payment: 6 </p>
+                    </div>
+                    <div class="row">
+                        <p>Late interest rate: 10.50% per annum</p>
+                    </div>
+                    <div class="row">
+                        <p>Invoice period: &#60;invoice_period></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment_info_bank">
+            <div class="row">
+                <div class="col-4 Header">
+                    <h4>IBAN</h4>
+                </div>
+                <div class="col-4 Header">
+                    <h4>BANK TRANSFER</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="row">
+                        <p>IBAN-number: JO71CB JO0000 000000 001234 567890</p>
+                    </div>
+                    <div class="row">
+                        <p>Swift-number: BNOR PH MMXXX</p>
+                    </div>
+                    <div class="row">
+                        <p>Bank:: SEB</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <p>Account number: DE89370400440532013000</p>
+                    </div>
+                    <div class="row">
+                        <p>Clearing number: DEBLZ12345678</p>
+                    </div>
+                    <div class="row">
+                        <p>Bank: SEB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row footer text-center">
+                <div class="col">
+                    <p>E : hello@reallygreatsite.com</p>
+                </div>
+                <div class="col">
+                    <p>P : +123-456-7890</p>
+                </div>
+                <div class="col">
+                    <p>A : 123 Anywhere St., Any City, ST 12345</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+    
+   
+</html>
